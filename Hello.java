@@ -7,15 +7,24 @@ public class Solution{
 		ListNode res=new ListNode(0);
 		res.next=head;
 		int length=0;
+		ListNode pre=res,cur=head,tmp=null;
 
 		while(head!=null){
 			length++;
 			head=head.next;
 		}
-		for(){
-			for(){
+		for(int i=0;i<length/k;i++){
+			for(int j=olj<k;j++){
+				tmp=cur.next;
+				cur.next=tmp.next;
+				tmp.next=pre.next;
+				pre.next=tmp;
+
 			}
+			pre=cur;
+			cur=cur.next;
 	}
+	return head;
 
 }
 
